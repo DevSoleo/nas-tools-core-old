@@ -2,10 +2,10 @@ import os
 import json
 import hashlib
 
-import core.file_reader
+import cores.music.file_reader
+import cores.common.settings as settings
 
-settings = json.load(open("./core/settings.json", encoding="utf8"))
-directory = "./" + settings["album"] + "/"
+directory = "./" + settings.get("music", "album") + "/"
 
 def list_folder(directory):
     # listing all files from the given directory
