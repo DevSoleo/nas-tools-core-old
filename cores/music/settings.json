@@ -1,4 +1,5 @@
 {
     "storage_path": "./static/storage/music/",
+    "database_path": "./static/storage/music/music_db.json",
     "ext": "flac"
 }
